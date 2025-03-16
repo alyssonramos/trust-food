@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:trust_food/screens/home/buyerHome.dart';
-import 'package:trust_food/screens/home/sellerHome.dart';
 import 'package:trust_food/screens/login/loginScreen.dart';
 
 void main() {
@@ -8,6 +6,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

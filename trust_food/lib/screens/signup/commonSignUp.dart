@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:trust_food/screens/signup/successSignUpPage.dart';
 
 class SignUpCommon extends StatefulWidget {
+  const SignUpCommon({super.key});
+
   @override
   _SignUpCommonState createState() => _SignUpCommonState();
 }

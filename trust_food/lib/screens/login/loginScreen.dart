@@ -5,6 +5,8 @@ import 'package:trust_food/screens/home/sellerHome.dart';
 import 'package:trust_food/screens/signup/commonSignUp.dart';
 
 class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
+
   @override
   _LoginScreenState createState() => _LoginScreenState();
 }
@@ -50,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
               // Email field
               Image.asset(
                 'assets/image.png', // Add your image in the assets folder
-                height: 100.0, // Adjust the height as needed
+                height: 200.0, // Adjust the height as needed
               ),
               TextFormField(
                 keyboardType: TextInputType.emailAddress,
@@ -102,7 +104,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly, // Spaces buttons evenly
                 children: [
                   ElevatedButton(
-                    onPressed: _login,
+                    //onPressed: _login,
+                    //child: Text("Login"),
+                    onPressed: () {
+                      Navigator.push(context, 
+                      MaterialPageRoute(builder: (context) => SellerHomePage()));  
+                    },
                     child: Text("Login"),
                   ),
                   ElevatedButton(
